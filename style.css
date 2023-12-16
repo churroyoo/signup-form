@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 16px);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    width: 720px;
+    height: 540px;
+    border: 1px rgb(231, 232, 230) solid;
+    border-radius: 8px;
+    box-shadow: 4px 4px 24px rgb(189, 191, 188);
+    overflow: hidden;
+}
+
+
+.left {
+    flex: 2 0 auto;
+    background-image: url(https://images.unsplash.com/photo-1702651250304-2d1d94d1f847?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:auto 100%;
+    height: 100%;
+    position: relative;
+    max-width: 34%;
+}
+
+.transparency {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(rgba(255,0,0,0), rgb(35, 35, 35));
+}
+
+.logo-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(rgb(35, 35, 35), rgba(255,0,0,0));
+}
+
+.logo > h3{
+    margin: 0;
+    color: white;
+}
+.logo-img{
+    background-color: rgb(217, 241, 250);
+    height: 24px;
+    width: 24px;
+    border-radius: 16px;
+    border: 2px rgb(61, 103, 119) solid;
+    margin-right: 4px;
+}
+
+.logo{
+    display: flex;
+    border-radius: 4px;
+    border: 1px rgb(158, 178, 186) solid;
+    padding: 4px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.left > p,
+p > a,
+p > a:visited{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.left > p{
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+}
+
+.right {
+    box-sizing: border-box;
+    flex:3 0 auto;
+    background-color: rgb(241, 245, 238);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 66%;
+    padding: 24px;
+    gap: 24px;
+}
+
+header > h1,
+header > p {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.right h3 {
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form .formControl{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.formRow{
+    display: flex;
+    gap: 8px;
+}
+
+button{
+    padding: 8px 20px;
+    background-color: rgb(30, 111, 116);
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    color: white;
+    border-radius: 4px;
+}
