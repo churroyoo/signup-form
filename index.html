@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@
                 <div class="formRow">
                     <div class="formControl">
                         <label for="f-name">First Name</label>
-                        <input type="text" name="f-name" id="f-name">
+                        <input type="text" name="f-name" id="f-name" autofocus>
                     </div>
                     <div class="formControl">
                         <label for="l-name">Last Name</label>
@@ -52,18 +52,20 @@
                     </div> 
                     <div class="formControl">
                         <label for="phone">Phone Number</label>
-                        <input type="number" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone">
                     </div>
                 </div>
 
                 <div class="formRow">
                     <div class="formControl">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" minlength="6" title="Passwords must be 6 or more characters">
+                        <span></span>
                     </div>
                     <div class="formControl">
                         <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm" id="confirm">
+                        <input type="password" name="confirm" id="confirm" minlength="6">
+                        <span></span>
                     </div>
                 </div> 
             </form>

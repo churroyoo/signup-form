@@ -107,7 +107,7 @@ header > p {
 form{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
 }
 
 form .formControl{
@@ -118,7 +118,7 @@ form .formControl{
 
 .formRow{
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
 
 button{
@@ -129,4 +129,32 @@ button{
     font-family: inherit;
     color: white;
     border-radius: 4px;
+}
+
+input{
+    appearance: none;
+    border-radius: 4px;
+    border: 1px rgb(178, 183, 183) solid;
+    padding: 6px;
+}
+
+input:focus{
+    box-shadow: 1px 1px 4px rgb(179, 182, 177);
+    outline: none;
+    border: 1.5px rgb(55, 156, 224) solid;
+}
+
+input[type="password"]:invalid{
+    border: 1px rgb(151, 48, 48) solid;
+}
+
+input + span {
+    position: relative;
+}
+
+input:invalid + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "Must be 6+ digits";
+    color: rgb(255, 0, 0);
 }
